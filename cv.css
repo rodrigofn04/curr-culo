@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.textoPerfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.textoPerfil .imgBx img{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.textoPerfil h2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.textoPerfil h2 span{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.infoContato{
+    padding-top: 30px;
+}
+
+.infoContato ul li .fa{
+    color: blue;
+}
+
+.titulo{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.infoContato ul{
+    position: relative;
+}
+
+.infoContato ul li {
+    position: relative;
+    list-style-type: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.infoContato ul li .icone {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(165, 127, 127);
+}
+
+.infoContato ul li span {
+    color: #fff;
+    font-weight: 500;
+}
+
+.infoContato ul li span a{
+    color: #fff;
+}
+
+.infoEducação li{
+    margin-bottom: 15px;
+    color: white;
+}
+
+.infoEducação h5{
+    color: white;
+    font-weight: 700;
+}
+
+.infoEducação h4{
+    color: #fff;
+    font-weight: 300;
+}
+
+.infoEducação h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+
+.infoIdiomas .titulo{
+    color: white;
+}
+
+.infoIdiomas .percentual{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: white;
+    display: block;
+    margin-top: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.infoIdiomas ul li{
+    color: white;
+}
+
+.infoIdiomas .percentual div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: blue;
+    border-radius: 5px;
+}
+
+.container .esquerda{
+    position: relative;
+    background: darkblue;
+    padding: 40px;
+}
+
+.container .direita{
+    position: relative;
+    background: lightcyan;
+    padding: 40px;
+}
+
+.sobre{
+    margin-bottom: 50px;
+}
+
+.titulo2{
+    color: darkblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    margin-top: 100px;
+}
+
+
+.container .esquerda p{
+    color: white;
+}
+
+.sobre .caixa{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.sobre .caixa .ano_companhia{
+    min-width: 180px;
+}
+
+.sobre .caixa .ano_companhia h5{
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.sobre .caixa .ano_companhia h4{
+    text-transform: uppercase;
+    color: blue;
+    font-size: 16px;
+}
+
+.habilidades .caixa{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.habilidades .caixa h4{
+    text-transform: uppercase;
+    color: darkblue;
+    font-weight: 500;
+}
+
+.habilidades .caixa .percentual{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+.habilidades .caixa .percentual div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    background: blue;
+    border-radius: 5px;
+}
+
+.sobreinteresses ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.sobreinteresses ul li{
+    list-style: none;
+    color: black;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.sobreinteresses ul li .fa{
+    color: blue;
+    font-size: 18px;
+    width: 22px;
+}
+
+@media(max-width: 1000px)
+{
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sobreinteresses ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 600px)
+{
+    .sobre .caixa{
+        flex-direction: column;
+    }
+    .sobre .caixa .ano_companhia{
+        margin-bottom: 10px;
+    }
+    .sobreinteresses ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .habilidades .caixa{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
